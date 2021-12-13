@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>New Vision Data</title>
-        <link rel="icon" type="image/x-icon" href="{{ url_for('static',filename='asset/telescope2.ico') }}" />
+        <title>About Us - Start Bootstrap Theme</title>
+
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -30,66 +30,36 @@
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('about') }}">About</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('contact') }}">Contact</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{ url_for('customer_c') }}">Customer Cases</a></li>
-                     
 
-                    </li>
                     </ul>
-
+                </div>
 
         </nav>
         <!-- Page Header-->
-        <header class="masthead" style="background-image: url('{{ url_for('static',filename='assets/img/profile_home_2.jpg') }}')">
+        <header class="masthead" style="background-image: url('{{ url_for('static',filename='assets/img/About_profile_2.jpg') }}')">
             <div class="container position-relative px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <div class="site-heading">
-
-
-                                <h2> test</h2>
-                              
-
-
-                            <!-- <span class="subheading"> <span class="meta">Powerd by</span>  New Vision Data</span><br> -->
-                            <span class="meta" style="font-size: 1.25rem;
-                            font-weight: 300;
-                            font-style: italic;
-                            font-family:'Lora', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'" ><i>Powerd by <h5>New Vision Data</h5></i></span>           
+                        <div class="page-heading">
+                            <h1>About Us</h1>
+                            <span class="subheading">This is what We Build and Create.</span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <!-- Main Content-->
-        <div class="container px-4 px-lg-5">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-md-10 col-lg-8 col-xl-7">
-
-
-                    
-                    {% for posts in posts %}
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="{{ url_for('post',post_id=posts.id) }}">
-                            <h2 class="post-title"> {{ posts.title }}</h2>
-                            <h3 class="post-subtitle">{{ posts.subtitle }}</h3>
-                        </a>
-                        <p class="post-meta">
-                            Posted by
-                            <a href="#!">{{ posts.author }}</a>
-                            {{ posts.date_post.strftime('%B %d, %Y') }}
-
-
-                        </p>
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>We Create and Build what We Believe in, that's why We Act and React differently. </p>
+                        <p>Do you want to have life in your hands,Do you want to make precise and powerful moves, Do you want to be involved in every part of your business? Our products analyze the  data for you and take care of you to be involved in every part of your business and life.</p>
+                        <p>We create a great, unique, and simple IT product for data analysis. Full user-customized for all different types of services.</p>
                     </div>
-                    {% endfor %}               
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Pager-->
-                    <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
                 </div>
             </div>
-        </div>
-
+        </main>
         <!-- Footer-->
         <footer class="border-top">
             <div class="container px-4 px-lg-5">
@@ -132,4 +102,3 @@
         <script href="{{url_for('static',filename='scripts.js')}}"></script>
     </body>
 </html>
-
